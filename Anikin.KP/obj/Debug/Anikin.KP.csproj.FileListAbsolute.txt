@@ -1,0 +1,16 @@
+C:\Users\Admin\source\repos\Anikin.KP\Anikin.KP\bin\Debug\Anikin.KP.exe.config
+C:\Users\Admin\source\repos\Anikin.KP\Anikin.KP\bin\Debug\Anikin.KP.exe
+C:\Users\Admin\source\repos\Anikin.KP\Anikin.KP\bin\Debug\Anikin.KP.pdb
+C:\Users\Admin\source\repos\Anikin.KP\Anikin.KP\obj\Debug\Anikin.KP.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\Anikin.KP\Anikin.KP\obj\Debug\Anikin.KP.AddClient.resources
+C:\Users\Admin\source\repos\Anikin.KP\Anikin.KP\obj\Debug\Anikin.KP.Form1.resources
+C:\Users\Admin\source\repos\Anikin.KP\Anikin.KP\obj\Debug\Anikin.KP.Properties.Resources.resources
+C:\Users\Admin\source\repos\Anikin.KP\Anikin.KP\obj\Debug\Anikin.KP.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\Anikin.KP\Anikin.KP\obj\Debug\Anikin.KP.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Anikin.KP\Anikin.KP\obj\Debug\Anikin.KP.exe
+C:\Users\Admin\source\repos\Anikin.KP\Anikin.KP\obj\Debug\Anikin.KP.pdb
+C:\Users\Admin\source\repos\Anikin.KP\Anikin.KP\obj\Debug\Anikin.KP.AddBook.resources
+C:\Users\Admin\source\repos\Anikin.KP\Anikin.KP\obj\Debug\Anikin.KP.ChangeClient.resources
+C:\Users\Admin\source\repos\Anikin.KP\Anikin.KP\obj\Debug\Anikin.KP.FindBooks.resources
+C:\Users\Admin\source\repos\Anikin.KP\Anikin.KP\obj\Debug\Anikin.KP.ReturnAll.resources
+C:\Users\Admin\source\repos\Anikin.KP\Anikin.KP\obj\Debug\Anikin.KP.helloform.resources

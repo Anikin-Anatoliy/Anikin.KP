@@ -17,6 +17,7 @@ namespace Anikin.KP
         public Library MyLibrary = new Library();
         public Form1()
         {
+            TopMost = true;
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
         }
@@ -50,16 +51,9 @@ namespace Anikin.KP
             ChangeClient changeclientform = new ChangeClient();
             changeclientform.Show();
         }
-        bool check = true;
         private void Form1_Load(object sender, EventArgs e)
-        {
-            if(check == true)
-            {
-                helloform helloForm = new helloform();
-                helloForm.Show();
-                check = false;
-            }
-            
+        {          
+                  
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -113,7 +107,7 @@ namespace Anikin.KP
             {
                 string[] words = s1.Split(new char[] { ',' });
                 Book newBook = new Book(words[1], words[2]);
-                LibraryClient newClient = new LibraryClient(words[0], newBook, Int32.Parse(words[3]), words[4], words[5], words[6]);
+                LibraryClient newClient = new LibraryClient(words[0], newBook, Int32.Parse(words[3]), words[4], words[5], words[6], bool.Parse(words[7]));
                 MyLibrary.getClients().Add(newClient);
             }
             f1.Close();
@@ -123,7 +117,15 @@ namespace Anikin.KP
         private void button8_Click(object sender, EventArgs e)
         {
             MyLibrary.getClients().Clear();
+            System.IO.File.Delete(@"outputB.txt");
+            System.IO.File.Delete(@"outputС.txt");
             MyLibrary.getAllbook().Clear();
+            MessageBox.Show("Удалено");
+        }
+
+        private void Form1_FormClosing_1(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

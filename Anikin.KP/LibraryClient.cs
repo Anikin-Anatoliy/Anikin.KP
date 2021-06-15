@@ -16,7 +16,18 @@ namespace Anikin.KP
         private String Passport;
         private bool Debtor;
 
-        public LibraryClient(String fio, Book book, int age, String email, String phone, String passport) { 
+        public LibraryClient(String fio, Book book, int age, String email, String phone, String passport, bool d) { 
+            this.FIO = fio;
+            Mybooks = new List<Book>();
+            this.Mybooks.Add(book);
+            this.Age = age;
+            this.Email = email;
+            this.Phone = phone;
+            this.Passport = passport;
+            this.Debtor = d;
+        }
+        public LibraryClient(String fio, Book book, int age, String email, String phone, String passport)
+        {
             this.FIO = fio;
             Mybooks = new List<Book>();
             this.Mybooks.Add(book);
@@ -26,7 +37,6 @@ namespace Anikin.KP
             this.Passport = passport;
             this.Debtor = false;
         }
-
         public String getFIO()
         {
             return FIO;
@@ -118,7 +128,7 @@ namespace Anikin.KP
             }
             return s;
         }
-        public string write1()
+        public string writeS()
         {
             string s = "";
             for (int i = 0; i < Mybooks.Count(); i++)
@@ -143,7 +153,7 @@ namespace Anikin.KP
         }
         public string Save()
         {
-            return FIO + "," + this.write1() + Age.ToString() + "," + Email.ToString() + "," +
+            return FIO + "," + this.writeS() + Age.ToString() + "," + Email.ToString() + "," +
                   Phone.ToString() + "," + Passport.ToString() + "," + Debtor.ToString();
         }
     }

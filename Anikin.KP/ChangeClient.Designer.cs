@@ -273,7 +273,7 @@ namespace Anikin.KP
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(421, 453);
+            this.label12.Location = new System.Drawing.Point(458, 484);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(0, 18);
             this.label12.TabIndex = 38;
@@ -328,18 +328,20 @@ namespace Anikin.KP
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton1.Location = new System.Drawing.Point(387, 448);
+            this.radioButton1.Location = new System.Drawing.Point(377, 448);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(59, 22);
             this.radioButton1.TabIndex = 43;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Есть";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.UseVisualStyleBackColor = false;
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
+            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.radioButton2.Location = new System.Drawing.Point(494, 448);
             this.radioButton2.Name = "radioButton2";
@@ -347,7 +349,7 @@ namespace Anikin.KP
             this.radioButton2.TabIndex = 44;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Нет";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.UseVisualStyleBackColor = false;
             // 
             // ChangeClient
             // 

@@ -29,7 +29,7 @@ private void button1_Click(object sender, EventArgs e)
             }
             String Bname = textBox7.Text;
             Book newBook = new Book(Bname, Author);
-            if (MyLibrary.getAllbook().Contains(newBook))
+            if (MyLibrary.getAllbook().Exists(x => (x.getAuthor() == newBook.getAuthor()) && (x.getBname() == newBook.getBname())))
             {
                 MessageBox.Show("Такая книга уже существует");
                 return;
@@ -81,9 +81,9 @@ private void button1_Click(object sender, EventArgs e)
             }
             String Bname = textBox7.Text;
             Book newBook = new Book(Bname, Author);
-            if (MyLibrary.getAllbook().Contains(newBook))
+            if (MyLibrary.getAllbook().Exists(x => (x.getAuthor() == newBook.getAuthor())&&(x.getBname() == newBook.getBname())))
             {
-                int i = MyLibrary.getAllbook().FindIndex(x => x == newBook);
+                int i = MyLibrary.getAllbook().FindIndex(x => (x.getAuthor() == newBook.getAuthor()) && (x.getBname() == newBook.getBname()));
                 MyLibrary.getAllbook().RemoveAt(i);
             }
             else

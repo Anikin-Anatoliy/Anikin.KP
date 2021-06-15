@@ -26,8 +26,7 @@ namespace Anikin.KP
         {
             if (check == true)
             {
-                aTimer = new System.Timers.Timer(10000);
-                // Hook up the Elapsed event for the timer. 
+                aTimer = new System.Timers.Timer(5000);
                 aTimer.Elapsed += OnTimedEvent;
                 aTimer.AutoReset = false;
                 aTimer.Enabled = true;
@@ -45,10 +44,17 @@ namespace Anikin.KP
             this.BeginInvoke(new Action(() =>
             {
                 aTimer.Stop();
-                this.Close();
+                this.Hide();
+                Form1 mainform = new Form1();
+                mainform.Show();
             }));
             aTimer.Stop();
             aTimer.Enabled = false;
+        }
+
+        private void helloform_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

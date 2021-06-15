@@ -56,6 +56,7 @@ namespace Anikin.KP
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "helloform";
             this.Text = "Библиотека";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.helloform_FormClosing);
             this.Load += new System.EventHandler(this.helloform_Load);
             this.VisibleChanged += new System.EventHandler(this.helloform_VisibleChanged);
             this.ResumeLayout(false);

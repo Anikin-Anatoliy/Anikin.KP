@@ -77,7 +77,7 @@ namespace Anikin.KP
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(366, 57);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Добавить или изменить книгу";
+            this.button2.Text = "Добавить или удалить книгу";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -178,6 +178,7 @@ namespace Anikin.KP
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Библиотека";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing_1);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

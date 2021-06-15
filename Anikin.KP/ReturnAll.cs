@@ -43,5 +43,38 @@ namespace Anikin.KP
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Clear();
+            foreach (LibraryClient client in MyLibrary.getClients())
+            {
+                if (client.getDebtor() == true)
+                {
+                    dataGridView1.Rows.Add(client.getFIO(), client.getBookstr(), client.getAge(), client.getEmail(), client.getPhone(), client.getPassport(), client.getDebtor());
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Clear();
+            foreach (LibraryClient client in MyLibrary.getClients())
+            {
+                if (client.getDebtor() == false)
+                {
+                    dataGridView1.Rows.Add(client.getFIO(), client.getBookstr(), client.getAge(), client.getEmail(), client.getPhone(), client.getPassport(), client.getDebtor());
+                }
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Clear();
+            foreach (LibraryClient client in MyLibrary.getClients())
+            {
+                dataGridView1.Rows.Add(client.getFIO(), client.getBookstr(), client.getAge(), client.getEmail(), client.getPhone(), client.getPassport(), client.getDebtor());
+            }
+        }
     }
 }
